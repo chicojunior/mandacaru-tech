@@ -1,0 +1,157 @@
+@import url(reset.css);
+
+html,
+body {
+	background: #fff;
+	color: #000;
+	font-family: 'Raleway', sans-serif;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	width: fit-content;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+header,
+section,
+footer {
+	padding: 1rem;
+}
+
+footer {
+	background-color: #000;
+	display: flex;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 7rem;
+	font-weight: 800;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+}
+
+h1::after {
+	color: #fff;
+	mix-blend-mode: difference;
+}
+
+h2 {
+	font-size: 3rem;
+	font-weight: 800;
+	margin-bottom: 1rem;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+nav ul {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	padding: 0;
+}
+
+nav ul li {
+	margin-right: 1rem;
+}
+
+.cta {
+	background-image: url('/assets/img/cactus-plant-on-light-gray-background.webp');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0;
+}
+
+.cta__text {
+	padding: 1rem;
+}
+
+.cta h2 {
+	text-transform: none;
+	padding: 0 1rem;
+}
+
+.logo {
+	align-items: center;
+}
+
+.logo img {
+	width: 3rem;
+	margin-right: 1rem;
+}
+
+.logo h2 {
+	font-size: 3rem;
+	text-transform: capitalize;
+}
+
+.services {
+	display: flex;
+	justify-content: space-between;
+}
+
+.services div {
+	padding: 1rem;
+}
+
+.members {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.members a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	text-decoration: none;
+	color: #000;
+}
+
+.members img {
+	border-radius: 50%;
+	width: 12rem;
+}
+
+.tech-stack div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.tech-stack img {
+	width: 5rem;
+}
+
+.tech-stack li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 1rem;
+	padding: 1rem;
+}
+
+@media (max-width: 500px) {
+	h1 {
+		font-size: 5rem;
+	}
+}
+
+@media (max-width: 375px) {
+	h1 {
+		font-size: 4rem;
+	}
+}
