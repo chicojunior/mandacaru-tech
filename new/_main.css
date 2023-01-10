@@ -59,6 +59,18 @@ ul {
 
 nav ul li {
 	margin-right: 1rem;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+#header nav a {
+	text-decoration: none;
+	color: #000;
+	transition: 0.16s ease-in;
+}
+
+#header nav a:hover {
+	color: #80ab82;
 }
 
 .cta {
@@ -95,13 +107,12 @@ nav ul li {
 	text-transform: capitalize;
 }
 
-.services {
-	display: flex;
-	justify-content: space-between;
+#services div {
+	padding: 0;
 }
 
-.services div {
-	padding: 1rem;
+.service {
+	flex: 1;
 }
 
 .members {
@@ -118,6 +129,11 @@ nav ul li {
 	padding: 1rem;
 	text-decoration: none;
 	color: #000;
+	transition: 0.3s ease-in-out;
+}
+
+.members a:hover {
+	opacity: 0.8;
 }
 
 .members img {
