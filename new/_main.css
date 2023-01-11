@@ -4,27 +4,33 @@ html,
 body {
 	background: #fff;
 	color: #000;
-	font-family: 'Raleway', sans-serif;
+	/* font-family: 'Raleway', sans-serif; */
+	font-family: 'Oswald', sans-serif;
 	font-size: 100%;
 	margin: 0;
 	padding: 0;
-	width: fit-content;
+	width: 100%;
 	-webkit-font-smoothing: antialiased;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
-header,
-section,
-footer {
-	padding: 1rem;
+header {
+	padding: 1rem 0;
 }
 
-footer {
-	background-color: #000;
-	display: flex;
-	color: #fff;
-	justify-content: center;
-	align-items: center;
+p {
+	font-weight: 300;
+	font-size: 18px;
+}
+
+section {
+	margin-top: 2rem;
+}
+
+section h2 {
+	text-align: center;
+	margin-bottom: 1rem;
+	font-weight: 500;
 }
 
 h1 {
@@ -73,6 +79,33 @@ nav ul li {
 	color: #80ab82;
 }
 
+#services div {
+	padding: 0;
+}
+
+#footer {
+	background-color: #000;
+	display: flex;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	padding: 33px 0;
+}
+
+#footer a {
+	text-decoration: none;
+	color: #fff;
+	transition: 0.16s ease-in;
+}
+
+#footer a:hover {
+	color: #80ab82;
+}
+
+#footer img {
+	width: 2rem;
+}
+
 .cta {
 	background-image: url('/assets/img/cactus-plant-on-light-gray-background.webp');
 	background-size: cover;
@@ -82,15 +115,13 @@ nav ul li {
 	justify-content: center;
 	flex-direction: column;
 	padding: 0;
-}
-
-.cta__text {
-	padding: 1rem;
+	margin: 0;
 }
 
 .cta h2 {
 	text-transform: none;
-	padding: 0 1rem;
+	padding: 0;
+	text-align: left;
 }
 
 .logo {
@@ -105,10 +136,6 @@ nav ul li {
 .logo h2 {
 	font-size: 3rem;
 	text-transform: capitalize;
-}
-
-#services div {
-	padding: 0;
 }
 
 .service {
@@ -160,14 +187,49 @@ nav ul li {
 	padding: 1rem;
 }
 
-@media (max-width: 500px) {
+.tech-stack li p {
+	margin-top: 1rem;
+}
+
+.social ul {
+	margin: 0;
+}
+
+.social li {
+	margin-right: 1rem;
+	transition: 0.3s ease-in-out;
+}
+
+.social li {
+	margin-right: 1rem;
+}
+
+.social svg {
+	fill: #fff;
+	transition: 0.3s ease-in-out;
+	width: 40px;
+}
+
+.social svg:hover {
+	fill: #80ab82;
+}
+
+@media screen and (max-width: 500px) {
 	h1 {
 		font-size: 5rem;
 	}
+
+	.header-nav {
+		display: none;
+	}
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
 	h1 {
 		font-size: 4rem;
+	}
+
+	.header-nav {
+		display: none;
 	}
 }

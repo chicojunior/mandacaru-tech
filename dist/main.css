@@ -1,10 +1,8 @@
 @import url(reset.css);
-
 html,
 body {
 	background: #fff;
 	color: #000;
-	/* font-family: 'Raleway', sans-serif; */
 	font-family: 'Oswald', sans-serif;
 	font-size: 100%;
 	margin: 0;
@@ -13,38 +11,38 @@ body {
 	-webkit-font-smoothing: antialiased;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
-
 header {
 	padding: 1rem 0;
 }
-
 p {
 	font-weight: 300;
 	font-size: 18px;
 }
-
 section {
 	margin-top: 2rem;
 }
-
 section h2 {
 	text-align: center;
 	margin-bottom: 1rem;
 	font-weight: 500;
 }
-
+footer {
+	background-color: #000;
+	display: flex;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+}
 h1 {
 	font-size: 7rem;
 	font-weight: 800;
 	margin-bottom: 1rem;
 	text-transform: uppercase;
 }
-
 h1::after {
 	color: #fff;
 	mix-blend-mode: difference;
 }
-
 h2 {
 	font-size: 3rem;
 	font-weight: 800;
@@ -52,60 +50,36 @@ h2 {
 	margin: 0;
 	text-transform: uppercase;
 }
-
 nav ul {
 	margin: 0;
 }
-
 ul {
 	list-style: none;
 	display: flex;
 	padding: 0;
 }
-
 nav ul li {
 	margin-right: 1rem;
 	font-size: 18px;
 	font-weight: 500;
 }
-
 #header nav a {
 	text-decoration: none;
 	color: #000;
 	transition: 0.16s ease-in;
 }
-
 #header nav a:hover {
 	color: #80ab82;
 }
-
 #services div {
 	padding: 0;
 }
-
 #footer {
-	background-color: #000;
-	display: flex;
-	color: #fff;
-	justify-content: center;
-	align-items: center;
 	padding: 33px 0;
 }
-
-#footer a {
-	text-decoration: none;
-	color: #fff;
-	transition: 0.16s ease-in;
-}
-
-#footer a:hover {
-	color: #80ab82;
-}
-
 #footer img {
 	width: 2rem;
 }
-
 .cta {
 	background-image: url('/assets/img/cactus-plant-on-light-gray-background.webp');
 	background-size: cover;
@@ -117,37 +91,30 @@ nav ul li {
 	padding: 0;
 	margin: 0;
 }
-
 .cta h2 {
 	text-transform: none;
 	padding: 0;
 	text-align: left;
 }
-
 .logo {
 	align-items: center;
 }
-
 .logo img {
 	width: 3rem;
 	margin-right: 1rem;
 }
-
 .logo h2 {
 	font-size: 3rem;
 	text-transform: capitalize;
 }
-
 .service {
 	flex: 1;
 }
-
 .members {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
 .members a {
 	display: flex;
 	flex-direction: column;
@@ -158,27 +125,22 @@ nav ul li {
 	color: #000;
 	transition: 0.3s ease-in-out;
 }
-
 .members a:hover {
 	opacity: 0.8;
 }
-
 .members img {
 	border-radius: 50%;
 	width: 12rem;
 }
-
 .tech-stack div {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-
 .tech-stack img {
 	width: 5rem;
 }
-
 .tech-stack li {
 	display: flex;
 	flex-direction: column;
@@ -186,49 +148,24 @@ nav ul li {
 	line-height: 1rem;
 	padding: 1rem;
 }
-
 .tech-stack li p {
 	margin-top: 1rem;
 }
-
 .social ul {
 	margin: 0;
 }
-
-.social li {
-	margin-right: 1rem;
-	transition: 0.3s ease-in-out;
-}
-
-.social li {
-	margin-right: 1rem;
-}
-
-.social svg {
-	fill: #fff;
-	transition: 0.3s ease-in-out;
-	width: 40px;
-}
-
-.social svg:hover {
-	fill: #80ab82;
-}
-
 @media screen and (max-width: 500px) {
 	h1 {
 		font-size: 5rem;
 	}
-
 	.header-nav {
 		display: none;
 	}
 }
-
 @media screen and (max-width: 375px) {
 	h1 {
 		font-size: 4rem;
 	}
-
 	.header-nav {
 		display: none;
 	}

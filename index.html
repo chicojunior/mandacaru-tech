@@ -4,20 +4,224 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="_main.css">
   <title>Mandacaru Tech</title>
 </head>
 
 <body>
-  <header>
-    <h1>Coming</h1>
-    <h1>Soon</h1>
+  <header id="header">
+    <div class="container">
+      <div class="row">
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <div class="logo d-flex flex-row">
+            <img src="/assets/img/cactus.png" alt="">
+            <h2>Mandacaru Tech</h2>
+          </div>
+          <nav class="header-nav">
+            <ul>
+              <li><a href="#header">Home</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#technologies">Tecnologias</a></li>
+              <li><a href="#about">Sobre</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
   </header>
+
+  <main>
+    <section class="cta">
+      <div class="container">
+        <div class="row">
+          <h2>Produtos digitais arretados</h2>
+          <h2>do conceito à realidade.</h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <h2>serviços</h2>
+          <div class="row d-flex">
+            <div class="service p-2 col-1 col-sm-1">
+              <h3>Consultoria</h3>
+              <p>Oferecemos serviços de consultoria relacionados à desenvolvimento e gerenciamento
+                de projetos, para o planejamento e definição de tecnologias em projetos.</p>
+            </div>
+            <div class="service p-2 col-1 col-sm-1">
+              <h3>Desenvolvimento Web</h3>
+              <p>Somos especializados no desenvolvimento de sistemas e aplicações complexas que requerem o
+                desenvolvimento de integrações
+                e a utilização de diversas ferramentas e funcionalidades.</p>
+            </div>
+            <div class="service p-2 col-1 col-sm-1">
+              <h3>Desenvolvimento Mobile</h3>
+              <p>Também somos especialistas no desenvolvimento de aplicaçoes mobile nativas. Entenedmos que em certos
+                casos uma aplicação web responsiva não é o suficiente ou a melhor solução, por isso estamos preparados
+                para essa necessidade.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="technologies">
+      <div class="container">
+        <div class="row">
+          <h2>Tecnologias</h2>
+          <div class="tech-stack">
+            <div>
+              <h3>Especialidades</h3>
+              <ul>
+                <li class="d-flex flex-column">
+                  <img src="/assets/img/tech/html-5.webp" />
+                  <p>HTML</p>
+                </li>
+                <li>
+                  <img src="/assets/img/tech/css3.webp" />
+                  <p>CSS</p>
+                </li>
+                <li>
+                  <img src="/assets/img/tech/javascript.webp" />
+                  <p>Javascript</p>
+                </li>
+                <li>
+                  <img src="/assets/img/tech/typescript.webp" />
+                  <p>Typescript</p>
+                </li>
+                <li>
+                  <img src="/assets/img/tech/angular.webp" />
+                  <p>Angular</p>
+                </li>
+                <li>
+                  <img src="/assets/img/tech/java.webp" />
+                  <p>Java</p>
+                </li>
+                <li>
+                  <img src="/assets/img/tech/spring_1.webp" />
+                  <p>Spring</p>
+                </li>
+                <li>
+                  <img src="/assets/img/tech/android.webp" />
+                  <p>Android</p>
+                </li>
+                <li>
+                  <img src="/assets/img/tech/ionic.webp" />
+                  <p>Ionic</p>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Experimentando</h3>
+              <ul>
+                <li>
+                  <img src="/assets/img/tech/react.webp" />
+                  <p>React</p>
+                </li>
+                <li>
+                  <img src="/assets/img/tech/node-js.webp" />
+                  <p>Node.js</p>
+                </li>
+                <li>
+                  <img src="/assets/img/tech/flutter.webp" />
+                  <p>Flutter</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <h2>Sobre</h2>
+          <p>Construímos soluções tecnológicas usando uma metodologia ágil para oferecer a melhor experiência de usuário
+            e
+            resultados
+            comerciais. Antes de começarmos a desenvolver seu software ou aplicativo, trabalhamos em conjunto com você
+            no
+            Product
+            Design Sprint, para que você comece com um plano de ação claro, com um tempo e orçamento precisos.</p>
+
+          <div class="members">
+            <a href="https://www.linkedin.com/in/franciscovale/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://media.licdn.com/dms/image/D4D03AQHvigG1enOrWg/profile-displayphoto-shrink_800_800/0/1671003429936?e=1677715200&v=beta&t=NfOxvNLk1cKU5z78fD7vT5_4FHiC4GBLAu7KKyuyKIg"
+                alt="">
+              <h3>Francisco Vale</h3>
+              <p>Front-end and Mobile Developer</p>
+            </a>
+            <a href="https://www.linkedin.com/in/victorsampaio/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://media.licdn.com/dms/image/C4D03AQGfyO90qIfYfQ/profile-displayphoto-shrink_800_800/0/1619730399633?e=1677715200&v=beta&t=gQDFuiG52bCvSbka2SmwVWuAul_Dp7bysEqxqMyw4PQ"
+                alt="">
+              <h3>Victor Sampaio</h3>
+              <p>Back-end and Mobile Developer</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <div class="social">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/company/85933260" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+                    <path
+                      d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/mandacarutech" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+                    <path
+                      d="M32,11h5c0.552,0,1-0.448,1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484,2.153,32.376,2,30.141,2C24,2,20,5.68,20,12.368 V19h-7c-0.552,0-1,0.448-1,1v7c0,0.552,0.448,1,1,1h7v19c0,0.552,0.448,1,1,1h7c0.552,0,1-0.448,1-1V28h7.222 c0.51,0,0.938-0.383,0.994-0.89l0.778-7C38.06,19.518,37.596,19,37,19h-8v-5C29,12.343,30.343,11,32,11z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/mandacaru.tech/" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+                    <path
+                      d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact">
+            <p><a href="mailto:victorfsampaio@gmail.com">victorfsampaio@gmail.com</a> &nbsp;&nbsp; +351 912 575
+              869 &nbsp;&nbsp; Fortaleza,
+              Ceará, Brasil</p>
+            <p><a href="mailto:fdovalejr@gmail.com">fdovalejr@gmail.com</a> &nbsp;&nbsp; +351 912 575 869
+              &nbsp;&nbsp; Porto,
+              Portugal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
