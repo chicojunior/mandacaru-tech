@@ -12,6 +12,7 @@ body {
 	width: 100%;
 	-webkit-font-smoothing: antialiased;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	line-height: 1.2;
 }
 
 header {
@@ -20,7 +21,7 @@ header {
 
 p {
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 1.2rem;
 }
 
 section {
@@ -53,6 +54,10 @@ h2 {
 	text-transform: uppercase;
 }
 
+h3 {
+	font-size: 1.5rem;
+}
+
 nav ul {
 	margin: 0;
 }
@@ -81,6 +86,11 @@ nav ul li {
 
 #services div {
 	padding: 0;
+}
+
+#technologies {
+	/* position: relative;
+	height: 35rem; */
 }
 
 #footer {
@@ -168,7 +178,31 @@ nav ul li {
 	width: 12rem;
 }
 
-.tech-stack div {
+.stack-container {
+	/* background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white; */
+	font-weight: bold;
+	/* position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2; */
+	padding: 20px;
+	text-align: center;
+}
+
+.stack-bg {
+	background: url('/assets/img/code-bg.jpeg');
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.tech-stack {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
