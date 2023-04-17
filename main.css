@@ -1,5 +1,144 @@
 @import url(reset.css);
 
+/* Set up base styles */
+html,
+body {
+	background-color: #f7f7f7;
+	color: #333;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	line-height: 1.5;
+}
+
+/* Add some visual interest to the header */
+header {
+	background-color: #fff;
+	padding: 1.5rem 0;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust font weight and spacing on paragraphs */
+p {
+	font-weight: 400;
+	font-size: 1.1rem;
+	line-height: 1.8;
+	margin-bottom: 1.5rem;
+}
+
+/* Add more space between sections */
+section {
+	margin-top: 3rem;
+}
+
+/* Update font styles on section headings */
+section h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* Create a gradient text effect on the main heading */
+h1 {
+	font-size: 6rem;
+	font-weight: 800;
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+	background-image: linear-gradient(to right, #80ab82, #74b49b, #68b7b5, #5cbad0, #50bde9);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Adjust font weight and spacing on subheadings */
+h2 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* Create a border effect on subheadings */
+h2:before {
+	content: "";
+	display: block;
+	border-top: 2px solid #ccc;
+	width: 100px;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+}
+
+/* Add a more stylish font to tertiary headings */
+h3 {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.8rem;
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+}
+
+/* Improve styling of navigation links */
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav li {
+	margin-right: 1.5rem;
+}
+
+nav a {
+	font-weight: 600;
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: #666;
+	transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+	color: #80ab82;
+}
+
+/* Style the call-to-action section */
+.cta {
+	background-image: url('/assets/img/cactus-plant-on-light-gray-background.webp');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.cta h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 500;
+	text-transform: none;
+	color: #fff;
+	margin: 0;
+	margin-bottom: 1.5rem;
+}
+
+.cta p {
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: #fff;
+	margin: 0;
+}
+
+/* Style the logo and main
+*/
+/* 
 html,
 body {
 	background: #fff;
@@ -132,7 +271,7 @@ nav ul li {
 	text-transform: none;
 	padding: 0;
 	text-align: left;
-}
+} */
 
 .logo {
 	align-items: center;
