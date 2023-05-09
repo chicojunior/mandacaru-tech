@@ -1,5 +1,240 @@
 @import url(reset.css);
 
+/* Color Scheme */
+:root {
+	--primary-color: #80ab82;
+	--secondary-color: #ffffff;
+	--tertiary-color: #000000;
+}
+
+/* Typography */
+html,
+body {
+	background-color: var(--secondary-color);
+	color: var(--tertiary-color);
+	font-family: 'Oswald', sans-serif;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 7rem;
+	font-weight: 800;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	color: var(--primary-color);
+}
+
+h2 {
+	font-size: 3rem;
+	font-weight: 800;
+	margin-bottom: 1rem;
+	margin: 0;
+	text-transform: uppercase;
+	color: var(--tertiary-color);
+}
+
+h3 {
+	font-size: 1.5rem;
+	color: var(--tertiary-color);
+}
+
+p {
+	font-weight: 300;
+	font-size: 1.2rem;
+	color: var(--tertiary-color);
+}
+
+/* Whitespace */
+header {
+	padding: 1rem 0;
+}
+
+section {
+	margin-top: 2rem;
+}
+
+.service {
+	flex: 1;
+	padding: 1rem;
+}
+
+.members {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+/* Visual Elements */
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	width: 3rem;
+	margin-right: 1rem;
+}
+
+.logo h2 {
+	font-size: 3rem;
+	text-transform: capitalize;
+	color: var(--tertiary-color);
+}
+
+.members a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	text-decoration: none;
+	color: var(--tertiary-color);
+	transition: 0.3s ease-in-out;
+}
+
+.members a:hover {
+	opacity: 0.8;
+}
+
+.members img {
+	border-radius: 50%;
+	width: 12rem;
+}
+
+.nav-link {
+	color: #000;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	margin-right: 1rem;
+	position: relative;
+}
+
+.nav-link:hover {
+	color: #80ab82;
+}
+
+.nav-link::before {
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	right: 0;
+	height: 2px;
+	background-color: #80ab82;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.2s ease-in-out 0s;
+}
+
+.nav-link:hover::before {
+	visibility: visible;
+	transform: scaleX(1);
+}
+
+#services {
+	margin-top: 3rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.service {
+	background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	border-radius: 10px;
+	padding: 1rem;
+	margin-bottom: 2rem;
+	width: calc(33.33% - 2rem);
+	text-align: center;
+}
+
+.service:hover {
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	transform: translateY(-4px);
+}
+
+.service h3 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+.service p {
+	font-size: 1.2rem;
+	margin-top: 0.5rem;
+}
+
+#cta {
+	background-image: url('/assets/img/cactus-plant-on-light-gray-background.webp');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#cta h2 {
+	font-size: 3rem;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+#cta p {
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+#team {
+	margin-top: 3rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.member {
+	background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	border-radius: 10px;
+	padding: 1rem;
+	margin-bottom: 2rem;
+	width: calc(33.33% - 2rem);
+	text-align: center;
+}
+
+.member:hover {
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	transform: translateY(-4px);
+}
+
+.member img {
+	border-radius: 50%;
+	width: 12rem;
+}
+
+.member h3 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+.member p {
+	font-size: 1.2rem;
+	margin-top: 0.5rem;
+}
+
 /* Set up base styles */
 html,
 body {
@@ -49,7 +284,14 @@ h1 {
 	font-weight: 800;
 	margin-bottom: 2rem;
 	text-transform: uppercase;
-	background-image: linear-gradient(to right, #80ab82, #74b49b, #68b7b5, #5cbad0, #50bde9);
+	background-image: linear-gradient(
+		to right,
+		#80ab82,
+		#74b49b,
+		#68b7b5,
+		#5cbad0,
+		#50bde9
+	);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -65,7 +307,7 @@ h2 {
 
 /* Create a border effect on subheadings */
 h2:before {
-	content: "";
+	content: '';
 	display: block;
 	border-top: 2px solid #ccc;
 	width: 100px;
@@ -136,9 +378,6 @@ nav a:hover {
 	margin: 0;
 }
 
-/* Style the logo and main
-*/
-/* 
 html,
 body {
 	background: #fff;
@@ -271,9 +510,8 @@ nav ul li {
 	text-transform: none;
 	padding: 0;
 	text-align: left;
-} */
-
-.logo {
+}
+*/ .logo {
 	align-items: center;
 }
 
